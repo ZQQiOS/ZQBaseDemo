@@ -27,10 +27,11 @@
     [self addData];
 }
 - (void)addTableView{
-    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kSCREENWIDTH, kScreenHeight) style:UITableViewStyleGrouped];
+    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
     self.tableView = tableView;
     tableView.delegate = self;
     tableView.dataSource = self;
+    tableView.estimatedRowHeight = NO;
     tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     [self.view addSubview:_tableView];
 }
@@ -63,14 +64,14 @@
     return 40;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kSCREENWIDTH, 40)];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 40)];
     view.backgroundColor = [UIColor whiteColor];
-    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 5,kSCREENWIDTH-20 , 30)];
+    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 5,kScreenWidth-20 , 30)];
     titleLabel.text = self.titleArray[section];
     [view addSubview:titleLabel];
     
     //添加点击事件
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, kSCREENWIDTH, 40)];
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 40)];
     btn.tag = 100+section;
     [btn addTarget:self action:@selector(viewBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [view addSubview:btn];

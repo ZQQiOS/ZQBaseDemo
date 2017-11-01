@@ -21,9 +21,6 @@
 #import "Masonry.h"
 #import "YYKit.h"
 #import "MJExtension.h"
-#pragma mark *****适配*****
-#define kSCREENWIDTH   [UIScreen mainScreen].bounds.size.width
-#define kSCREENHHEIGHT [UIScreen mainScreen].bounds.size.height
 
 
 #pragma mark *****颜色*****

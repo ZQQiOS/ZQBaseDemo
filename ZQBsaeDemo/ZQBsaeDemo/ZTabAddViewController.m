@@ -90,7 +90,7 @@
     tableView.delegate = self;
     tableView.dataSource = self;
     
-    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kSCREENWIDTH, 150)];
+    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 150)];
     headerView.backgroundColor = [UIColor redColor];
     tableView.tableHeaderView = headerView;
 }
@@ -102,9 +102,9 @@
     return 1;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kSCREENWIDTH, 35)];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 35)];
     view.backgroundColor = [UIColor clearColor];
-    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 5,kSCREENWIDTH-20 , 25)];
+    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 5,kScreenWidth-20 , 25)];
     ZContentModel *model = self.arrayData[section];
     titleLabel.text = model.groupName;
     [view addSubview:titleLabel];
@@ -135,7 +135,7 @@
 
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    CGFloat h = (kSCREENWIDTH -3*10)/4 +10;
+    CGFloat h = (kScreenWidth -3*10)/4 +10;
     ZContentModel *model = self.arrayData[indexPath.section];
     CGFloat height;
     if (model.cellContent.count%4 == 0) {

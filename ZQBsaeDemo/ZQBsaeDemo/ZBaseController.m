@@ -78,7 +78,7 @@
  */
 - (void)addLabel{
     UILabel *label = [[UILabel alloc]init];
-    label.frame = CGRectMake(10, 70, kSCREENWIDTH-20, 100);
+    label.frame = CGRectMake(10, 70, kScreenWidth-20, 100);
     label.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:label];
     
@@ -96,7 +96,7 @@
  */
 - (void)addUIButton{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(10, 180, kSCREENWIDTH-20, 50);
+    button.frame = CGRectMake(10, 180, kScreenWidth-20, 50);
     [self.view addSubview:button];
     [button setTitle:@"这是一个按钮" forState:UIControlStateNormal];
     [button setTitle:@"点击了这个按钮" forState:UIControlStateHighlighted];
@@ -114,7 +114,7 @@
  */
 - (void)addPasswordTF{
     UITextField *passwordTF = [[UITextField alloc]init];
-    passwordTF.frame = CGRectMake(10, 250, kSCREENWIDTH-20, 45);
+    passwordTF.frame = CGRectMake(10, 250, kScreenWidth-20, 45);
     [self.view addSubview:passwordTF];
     passwordTF.backgroundColor = [UIColor lightGrayColor];
     passwordTF.placeholder = @"请输入密码";
@@ -125,7 +125,7 @@
  */
 - (void)addLoginButton{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(10, 330, kSCREENWIDTH-20, 50);
+    button.frame = CGRectMake(10, 330, kScreenWidth-20, 50);
     [self.view addSubview:button];
     [button setTitle:@"登录" forState:UIControlStateNormal];
     [button setTitle:@"点击了这个按钮" forState:UIControlStateHighlighted];

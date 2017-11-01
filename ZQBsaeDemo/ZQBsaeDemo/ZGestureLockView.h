@@ -34,5 +34,5 @@ typedef NS_ENUM(NSUInteger, SetGestureType) {
 
 - (void)checkPwdResult:(DownLockType)resultType;//检测解锁的结果
 
-- (void)checkTeacResult:(SetGestureType)resultType;//检测设置的结果
+- (void)checkSetResult:(SetGestureType)resultType;//检测设置的结果
 @end

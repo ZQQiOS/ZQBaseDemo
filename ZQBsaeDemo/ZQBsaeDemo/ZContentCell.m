@@ -22,7 +22,7 @@
             view.backgroundColor = [UIColor purpleColor];
             [self addSubview:view];
             
-            CGFloat w = (kSCREENWIDTH -3*magin)/4;
+            CGFloat w = (kScreenWidth -3*magin)/4;
             CGFloat h = w;
             CGFloat x = i%4*(w+magin);
             CGFloat y = i/4*(w+magin);
