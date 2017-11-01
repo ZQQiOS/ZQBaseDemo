@@ -31,7 +31,9 @@
     self.tableView = tableView;
     tableView.delegate = self;
     tableView.dataSource = self;
-    tableView.estimatedRowHeight = NO;
+    //避免iOS11tableview分组不能正常显示
+    tableView.estimatedSectionHeaderHeight = 0;
+    tableView.estimatedSectionFooterHeight = 0;
     tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     [self.view addSubview:_tableView];
 }

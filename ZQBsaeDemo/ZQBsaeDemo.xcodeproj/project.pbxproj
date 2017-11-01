@@ -480,7 +480,7 @@
 				TargetAttributes = {
 					026676D11F0DDB4D00F5B847 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = J42W5MN43T;
+						DevelopmentTeam = MLX7PU7VRR;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -750,7 +750,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ZQBsaeDemo/ZQBsaeDemo.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = J42W5MN43T;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MLX7PU7VRR;
 				INFOPLIST_FILE = ZQBsaeDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -759,7 +760,7 @@
 					"$(PROJECT_DIR)/ZQBsaeDemo",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = ZQQ.ZQBsaeDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = ZQBsaeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -773,7 +774,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ZQBsaeDemo/ZQBsaeDemo.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = J42W5MN43T;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MLX7PU7VRR;
 				INFOPLIST_FILE = ZQBsaeDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -782,7 +784,7 @@
 					"$(PROJECT_DIR)/ZQBsaeDemo",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = ZQQ.ZQBsaeDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = ZQBsaeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
