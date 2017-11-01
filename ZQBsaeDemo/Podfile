@@ -1,0 +1,14 @@
+platform :ios, '8.0'
+
+target 'ZQBsaeDemo’ do
+ pod 'YYKit'
+ pod 'Masonry'
+ pod 'JPush'
+ pod 'AFNetworking'
+ pod 'RongCloudIM/IMLib'
+ pod 'RongCloudIM/IMKit'
+ pod 'MJExtension'
+end
+
+
+

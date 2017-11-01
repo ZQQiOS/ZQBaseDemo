@@ -1,0 +1,38 @@
+//
+//  ZQBsaeDemo.pch
+//  ZQBsaeDemo
+//
+//  Created by crfchina-mac-mini-1000 on 2017/7/6.
+//  Copyright © 2017年 SH. All rights reserved.
+//
+
+#ifndef ZQBsaeDemo_pch
+#define ZQBsaeDemo_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ZQBsaeDemo_pch */
+
+#pragma mark *****导入头文件*****
+#import "UIView+Ex.h"
+#import "UIImageView+setCornerRadius.h"
+
+#import "Masonry.h"
+#import "YYKit.h"
+#import "MJExtension.h"
+#pragma mark *****适配*****
+#define kSCREENWIDTH   [UIScreen mainScreen].bounds.size.width
+#define kSCREENHHEIGHT [UIScreen mainScreen].bounds.size.height
+
+
+#pragma mark *****颜色*****
+/**随机颜色*/
+#define kRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+#define kRRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define kRRGBAColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(r)/255.0 blue:(r)/255.0 alpha:a]
+// clear背景颜色
+#define kClearColor [UIColor clearColor]
+
+
+
