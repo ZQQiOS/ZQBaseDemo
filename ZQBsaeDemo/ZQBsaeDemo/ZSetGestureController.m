@@ -32,7 +32,7 @@
 }
 #pragma mark 配置状态label
 - (void)configStatusLabel {
-    UILabel *statusLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, kViewTop, kScreenWidth, 40)];
+    UILabel *statusLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 40)];
     statusLabel.backgroundColor = [UIColor lightGrayColor];
     statusLabel.textColor = [UIColor redColor];
     statusLabel.textAlignment = NSTextAlignmentCenter;
@@ -42,8 +42,7 @@
 }
 
 - (void)configGestureLockView {
-    ZGestureLockView *gestureLockView = [[ZGestureLockView alloc] initWithFrame:CGRectMake(0, 128, kScreenWidth, kScreenWidth)];
-    NSLog(@"%d",kViewTop);
+    ZGestureLockView *gestureLockView = [[ZGestureLockView alloc] initWithFrame:CGRectMake(0, 40, kScreenWidth, kScreenWidth)];
 
     NSLog(@"gestureLockView.y%f",gestureLockView.y);
     gestureLockView.isSetGesture = YES;

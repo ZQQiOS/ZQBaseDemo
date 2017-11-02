@@ -22,7 +22,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     //添加按钮
     //添加两个按钮
-    UIButton *addBtn = [[UIButton alloc]initWithFrame:CGRectMake(10, 100, 100, 30)];
+    UIButton *addBtn = [[UIButton alloc]initWithFrame:CGRectMake(10, 30, 100, 30)];
     [addBtn setTitle:@"设置密码" forState:UIControlStateNormal];
     addBtn.tag = 101;
     [addBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
@@ -30,7 +30,7 @@
     addBtn.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:addBtn];
     
-    UIButton *subBtn = [[UIButton alloc]initWithFrame:CGRectMake(kScreenWidth - 100 -10, 100, 100, 30)];
+    UIButton *subBtn = [[UIButton alloc]initWithFrame:CGRectMake(kScreenWidth - 100 -10, 30, 100, 30)];
     [subBtn setTitle:@"解锁" forState:UIControlStateNormal];
     [subBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     subBtn.tag = 102;
