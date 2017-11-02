@@ -241,8 +241,7 @@
 				026676D91F0DDB4D00F5B847 /* AppDelegate.m */,
 				026676DB1F0DDB4D00F5B847 /* ViewController.h */,
 				026676DC1F0DDB4D00F5B847 /* ViewController.m */,
-				02FF33781F5D41240006D553 /* ZCellGroupController.h */,
-				02FF33791F5D41240006D553 /* ZCellGroupController.m */,
+				4580FF051FAB06DE00DA5F90 /* 分组 */,
 				024429E81FA6D8C000ED048E /* 手势密码 */,
 				026F24DF1FA1D81500C52A45 /* 音频 */,
 				02AC0EA31F94A6EF00DDF659 /* 自动布局 */,
@@ -436,6 +435,15 @@
 				43E01DEA6B937A6AC7BEE802 /* Pods-ZQBsaeDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4580FF051FAB06DE00DA5F90 /* 分组 */ = {
+			isa = PBXGroup;
+			children = (
+				02FF33781F5D41240006D553 /* ZCellGroupController.h */,
+				02FF33791F5D41240006D553 /* ZCellGroupController.m */,
+			);
+			name = "分组";
 			sourceTree = "<group>";
 		};
 		C5175D795CECD1BC7E125238 /* Frameworks */ = {

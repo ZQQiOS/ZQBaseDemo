@@ -37,19 +37,20 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor grayColor];
     self.arrayData = @[@"基本组件(各种加密)",@"tableView-Use",@"scrollView-Use",@"collectionView-Use",@"react-native-Use",@"webView-Use",@"image-Show",@"provide-Show",@"抽屉效果",@"cell展开收回",@"tableViewAddView",@"自动布局",@"音频",@"手势密码"];
     [self setupTableView];
-    int count = 5;
-    for (int i = 1; i <= count; i++) {
-        NSLog(@"输出%d",i);
-    }
     
 }
 
 
 - (void)setupTableView {
-    UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    NSLog(@"kScreenHeight%f",kScreenHeight);
+    NSLog(@"kViewTop%f",kViewTop);
+
+    CGFloat y = kScreenHeight - kViewTop;
+    NSLog(@"y%f",y);
+    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, y) style:UITableViewStylePlain];
     self.tableView = tableView;
     [self.view addSubview:tableView];
     

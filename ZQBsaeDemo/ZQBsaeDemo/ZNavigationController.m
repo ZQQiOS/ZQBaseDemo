@@ -19,6 +19,12 @@
     // Do any additional setup after loading the view.
     // 如果滑动移除控制器的功能失效，清空代理（让导航控制器重新设置这个功能）
     self.interactivePopGestureRecognizer.delegate = nil;
+    
+    //导航栏不透明 导航栏不透明时
+    //注意：frame从导航栏左下开始计算 导航栏透明时 从屏幕左上开始计算
+    self.navigationBar.barStyle = 0;
+    self.navigationBar.translucent = NO;
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBj"] forBarMetrics:UIBarMetricsDefault];
 }
 
 //重写push方法
