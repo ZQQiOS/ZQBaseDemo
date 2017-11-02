@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor redColor];
     self.title = @"解锁";
     [self configUI];
 
@@ -37,18 +37,17 @@
 
 #pragma mark 配置状态label
 - (void)configStatusLabel {
-    UILabel *statusLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 64, kScreenWidth, 40)];
+    UILabel *statusLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, kViewTop, kScreenWidth, 40)];
     statusLabel.backgroundColor = [UIColor orangeColor];
     statusLabel.textColor = [UIColor blackColor];
     statusLabel.textAlignment = NSTextAlignmentCenter;
     statusLabel.numberOfLines = 0;
-    //    [statusLabel sizeToFit];
     [self.view addSubview:statusLabel];
     self.statusLabel = statusLabel;
 }
 
 - (void)configGestureLockView {
-    ZGestureLockView *gestureLockView = [[ZGestureLockView alloc] initWithFrame:CGRectMake(0, 120, self.view.frame.size.width, self.view.frame.size.width)];
+    ZGestureLockView *gestureLockView = [[ZGestureLockView alloc] initWithFrame:CGRectMake(0, kViewTop+40, kScreenWidth, kScreenWidth)];
     gestureLockView.isSetGesture = NO;
     [self.view addSubview:gestureLockView];
     gestureLockView.delegate = self;
@@ -57,8 +56,7 @@
 
 
 - (void)configStuBottomView {
-    //学生端底部
-    UIView *stuBottomView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.gestureLockView.frame) + 20, kScreenWidth, 100)];
+    UIView *stuBottomView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.gestureLockView.frame) + 10, kScreenWidth, 100)];
     stuBottomView.backgroundColor = [UIColor greenColor];
     [self.view addSubview:stuBottomView];
     self.stuBottomView = stuBottomView;

@@ -21,7 +21,7 @@ typedef NS_ENUM(NSUInteger, DownLockType) {
     DownLockTypeNoEnough,
     DownLockTypeClear
 };
-//设置
+//设置密码
 typedef NS_ENUM(NSUInteger, SetGestureType) {
     SetGestureTypeNoEnough,
     SetGestureTypeTrue

@@ -54,42 +54,11 @@
         [self addSubview:btn];
     }
     
-    NSUInteger count = self.subviews.count;
-    int cols = 3;//总列数
-    CGFloat x = 0,y = 0,w = 0,h = 0;
-    if (kScreenWidth == 320) {
-        w = 50;
-        h = 50;
-    } else {
-        w = 60;
-        h = 60;
-    }
-    CGFloat minWidth = MIN(self.bounds.size.height, self.bounds.size.width);
-    CGFloat boundsWidth = self.bounds.size.width;
-    CGFloat margin = (minWidth - cols * w) / (cols + 1);//间距
-    CGFloat xMargin = (boundsWidth-2*margin-3*w)/2;
-    
-    CGFloat col = 0;
-    CGFloat row = 0;
-    for (int i = 0; i < count; i++) {
-        col = i % cols;
-        row = i / cols;
-        if (i == 0 || i == 3 || i == 6) {
-            x = xMargin;
-        } else if (i == 1 || i == 4 || i == 7) {
-            x = xMargin + w + margin;
-        } else {
-            x = xMargin + 2 * (margin+w);
-        }
-        y = (w+margin)*row;
-        UIButton *btn = self.subviews[i];
-        btn.frame = CGRectMake(x, y, w, h);
-    }
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    NSUInteger count = self.subviews.count;
+    NSUInteger count = 9;
     int cols = 3;//总列数
     CGFloat x = 0,y = 0,w = 0,h = 0;
     if (kScreenWidth == 320) {
@@ -99,24 +68,15 @@
         w = 60;
         h = 60;
     }
-    CGFloat minWidth = MIN(self.bounds.size.height, self.bounds.size.width);
-    CGFloat boundsWidth = self.bounds.size.width;
+    CGFloat minWidth = MIN(self.height, self.width);
     CGFloat margin = (minWidth - cols * w) / (cols + 1);//间距
-    CGFloat xMargin = (boundsWidth-2*margin-3*w)/2;
-    
-    CGFloat col = 0;
-    CGFloat row = 0;
+    CGFloat col ;
+    CGFloat row ;
     for (int i = 0; i < count; i++) {
         col = i % cols;
         row = i / cols;
-        if (i == 0 || i == 3 || i == 6) {
-            x = xMargin;
-        } else if (i == 1 || i == 4 || i == 7) {
-            x = xMargin + w + margin;
-        } else {
-            x = xMargin + 2 * (margin+w);
-        }
-        y = (w+margin)*row;
+        x = (col+1)*margin + col*w;
+        y = (row+1)*margin + row*h;
         UIButton *btn = self.subviews[i];
         btn.frame = CGRectMake(x, y, w, h);
     }
@@ -139,7 +99,7 @@
     if (self.finished) {
         //松开手
         NSMutableString *pwd = [self transferGestureResult];//传递创建的密码
-        [[UIColor colorWithRed:94/255.0 green:195/255.0 blue:49/255.0 alpha:0.8] set];
+        [[UIColor redColor] set];
         if ([self.delegate respondsToSelector:@selector(gestureLockView:drawRectFinished:)]) {
             [self.delegate gestureLockView:self drawRectFinished:pwd];
         }
@@ -154,7 +114,7 @@
                     break;
                 case SetGestureTypeTrue:
                 {
-                    [[UIColor colorWithRed:94/255.0 green:195/255.0 blue:49/255.0 alpha:0.8] set];
+                    [[UIColor blueColor] set];
                 }
                     break;
                 default:
@@ -193,12 +153,13 @@
             }
         }
     } else {
+        //密码输入中
         [path addLineToPoint:self.currentPoint];
-        [[UIColor colorWithRed:94/255.0 green:195/255.0 blue:49/255.0 alpha:0.8] set];
+        [[UIColor greenColor] set];
     }
     path.lineWidth = 1;
-    path.lineJoinStyle = kCGLineCapRound;
-    path.lineCapStyle = kCGLineCapRound;
+    path.lineJoinStyle = kCGLineCapRound;//线条拐角
+    path.lineCapStyle = kCGLineCapRound;//终点处理
     [path stroke];
 }
 #pragma mark 手势
@@ -212,15 +173,13 @@
         [self.errorBtns removeAllObjects];
     }
     _currentPoint = [pan locationInView:self];
-    
+
     for (UIButton *button in self.subviews) {
         if (CGRectContainsPoint(button.frame, _currentPoint)) {
             if (button.selected == NO) {
                 //点在按钮上
                 button.selected = YES;//设置为选中
                 [self.selectBtns addObject:button];
-            } else {
-                
             }
         }
     }

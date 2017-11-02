@@ -140,10 +140,10 @@
 			children = (
 				024429E91FA6D8E500ED048E /* ZGestureController.h */,
 				024429EA1FA6D8E500ED048E /* ZGestureController.m */,
-				024429EC1FA7019600ED048E /* ZSetGestureController.h */,
-				024429ED1FA7019600ED048E /* ZSetGestureController.m */,
 				024429F21FA7093900ED048E /* ZGestureLockView.h */,
 				024429F31FA7093900ED048E /* ZGestureLockView.m */,
+				024429EC1FA7019600ED048E /* ZSetGestureController.h */,
+				024429ED1FA7019600ED048E /* ZSetGestureController.m */,
 				024429EF1FA701AF00ED048E /* ZLockDownController.h */,
 				024429F01FA701AF00ED048E /* ZLockDownController.m */,
 			);

@@ -21,12 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //导航栏不透明 导航栏不透明时
-    //注意：frame从导航栏左下开始计算 导航栏透明时 从屏幕左上开始计算
-    self.navigationController.navigationBar.barStyle = 0;
-    self.navigationController.navigationBar.translucent = NO;
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor redColor];
     self.title = @"设置手势密码";
     [self configUI];
 }
@@ -37,18 +32,20 @@
 }
 #pragma mark 配置状态label
 - (void)configStatusLabel {
-    UILabel *statusLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 64, kScreenWidth, 40)];
+    UILabel *statusLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, kViewTop, kScreenWidth, 40)];
     statusLabel.backgroundColor = [UIColor lightGrayColor];
     statusLabel.textColor = [UIColor redColor];
     statusLabel.textAlignment = NSTextAlignmentCenter;
     statusLabel.numberOfLines = 0;
-    //    [statusLabel sizeToFit];
     [self.view addSubview:statusLabel];
     self.statusLabel = statusLabel;
 }
 
 - (void)configGestureLockView {
-    ZGestureLockView *gestureLockView = [[ZGestureLockView alloc] initWithFrame:CGRectMake(0, 120, self.view.frame.size.width, self.view.frame.size.width)];
+    ZGestureLockView *gestureLockView = [[ZGestureLockView alloc] initWithFrame:CGRectMake(0, 128, kScreenWidth, kScreenWidth)];
+    NSLog(@"%d",kViewTop);
+
+    NSLog(@"gestureLockView.y%f",gestureLockView.y);
     gestureLockView.isSetGesture = YES;
     gestureLockView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:gestureLockView];
@@ -57,7 +54,7 @@
 }
 
 - (void)configTeacBottomView {
-    UIView *teacBottomView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.gestureLockView.frame) + 20, kScreenWidth, 100)];
+    UIView *teacBottomView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.gestureLockView.frame)+10, kScreenWidth, 100)];
     teacBottomView.backgroundColor = [UIColor grayColor];
     [self.view addSubview:teacBottomView];
     self.teacBottomView = teacBottomView;
