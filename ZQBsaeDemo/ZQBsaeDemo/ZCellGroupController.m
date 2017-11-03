@@ -22,12 +22,13 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor redColor];
     self.selectedArr = [[NSMutableArray alloc]init];
     [self addTableView];
     [self addData];
 }
 - (void)addTableView{
-    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
+    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-kViewTop) style:UITableViewStyleGrouped];
     self.tableView = tableView;
     tableView.delegate = self;
     tableView.dataSource = self;
