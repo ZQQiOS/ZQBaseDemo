@@ -43,13 +43,9 @@
     
 }
 
-
 - (void)setupTableView {
-    NSLog(@"kScreenHeight%f",kScreenHeight);
-    NSLog(@"kViewTop%f",kViewTop);
 
     CGFloat y = kScreenHeight - kViewTop;
-    NSLog(@"y%f",y);
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, y) style:UITableViewStylePlain];
     self.tableView = tableView;
     [self.view addSubview:tableView];
