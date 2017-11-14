@@ -22,6 +22,7 @@
 #import "ZAutoresViewController.h"
 #import "ZAVAudioViewController.h"
 #import "ZGestureController.h"
+#import "ZImageFlowController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *arrayData;
@@ -38,7 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
-    self.arrayData = @[@"基本组件(各种加密)",@"tableView-Use",@"scrollView-Use",@"collectionView-Use",@"react-native-Use",@"webView-Use",@"image-Show",@"provide-Show",@"抽屉效果",@"cell展开收回",@"tableViewAddView",@"自动布局",@"音频",@"手势密码"];
+    self.arrayData = @[@"基本组件(各种加密)",@"tableView-Use",@"scrollView-Use",@"collectionView-Use",@"react-native-Use",@"webView-Use",@"image-Show",@"provide-Show",@"抽屉效果",@"cell展开收回",@"tableViewAddView",@"自动布局",@"音频",@"手势密码",@"图片轮播"];
     [self setupTableView];
     
 }
@@ -182,6 +183,14 @@
             ZGestureController *GestureVc = [[ZGestureController alloc]init];
             
             [self pushView:GestureVc didSelectRowAtIndexPath:indexPath];
+            
+        }
+            break;
+        case 14:
+        {
+            ZImageFlowController *ImageFlowVc = [[ZImageFlowController alloc]init];
+            
+            [self pushView:ImageFlowVc didSelectRowAtIndexPath:indexPath];
             
         }
             break;
