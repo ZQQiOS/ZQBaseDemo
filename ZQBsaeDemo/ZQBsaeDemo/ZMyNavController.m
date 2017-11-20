@@ -168,5 +168,43 @@
     cell.textLabel.text = [_dataArray objectAtIndex:indexPath.row];
     return cell;
 }
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+    int contentOffsety = scrollView.contentOffset.y;
+
+    if (scrollView.contentOffset.y<=170) {
+        self.NavView.headBackView.alpha = scrollView.contentOffset.y/170;
+        self.NavView.leftImageStr = @"left_first";
+        self.NavView.rightImageStr = @"left_first";
+        self.NavView.labelColor = [UIColor whiteColor];
+
+
+    }else{
+        self.NavView.headBackView.alpha = 1;
+
+        self.NavView.leftImageStr = @"left";
+        self.NavView.rightImageStr = @"left";
+        self.NavView.labelColor = [UIColor blueColor];
+
+    }
+    if (contentOffsety<0) {
+        CGRect rect = _backgroundImgV.frame;
+        rect.size.height = _backImgHeight-contentOffsety;
+        rect.size.width = _backImgWidth* (_backImgHeight-contentOffsety)/_backImgHeight;
+        rect.origin.x =  -(rect.size.width-_backImgWidth)/2;
+        rect.origin.y = 0;
+        _backgroundImgV.frame = rect;
+    }else{
+        CGRect rect = _backgroundImgV.frame;
+        rect.size.height = _backImgHeight;
+        rect.size.width = _backImgWidth;
+        rect.origin.x = 0;
+        rect.origin.y = -contentOffsety;
+        _backgroundImgV.frame = rect;
+
+    }
+
+
+}
 
 @end
