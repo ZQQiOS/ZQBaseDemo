@@ -23,6 +23,7 @@
 #import "ZAVAudioViewController.h"
 #import "ZGestureController.h"
 #import "ZImageFlowController.h"
+#import "ZMyNavController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *arrayData;
@@ -39,7 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
-    self.arrayData = @[@"基本组件(各种加密)",@"tableView-Use",@"scrollView-Use",@"collectionView-Use",@"react-native-Use",@"webView-Use",@"image-Show",@"provide-Show",@"抽屉效果",@"cell展开收回",@"tableViewAddView",@"自动布局",@"音频",@"手势密码",@"图片轮播"];
+    self.arrayData = @[@"基本组件(各种加密)",@"tableView-Use",@"scrollView-Use",@"collectionView-Use",@"react-native-Use",@"webView-Use",@"image-Show",@"provide-Show",@"抽屉效果",@"cell展开收回",@"tableViewAddView",@"自动布局",@"音频",@"手势密码",@"图片轮播",@"个人中心自定义导航栏"];
     [self setupTableView];
     
 }
@@ -191,6 +192,14 @@
             ZImageFlowController *ImageFlowVc = [[ZImageFlowController alloc]init];
             
             [self pushView:ImageFlowVc didSelectRowAtIndexPath:indexPath];
+            
+        }
+            break;
+        case 15:
+        {
+            ZMyNavController *myNavVc = [[ZMyNavController alloc]init];
+            
+            [self pushView:myNavVc didSelectRowAtIndexPath:indexPath];
             
         }
             break;
