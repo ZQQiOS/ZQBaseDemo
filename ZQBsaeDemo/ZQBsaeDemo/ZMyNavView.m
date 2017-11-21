@@ -38,30 +38,31 @@
     
         //添加两个按钮
         UIButton *leftBt = [[UIButton alloc]init];
+        leftBt.backgroundColor = [UIColor orangeColor];
         self.leftBt = leftBt;
         [self addSubview:leftBt];
-        leftBt.frame = CGRectMake(15, kNavTop+20, 44, 44);
-//        [leftBt mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.left.equalTo(self.mas_left).offset(10);
-//            make.centerX.equalTo(self);
-//            make.height.equalTo(@44);
-//            make.width.equalTo(@44);
-//
-//        }];
+//        leftBt.frame = CGRectMake(15, kNavTop+20, 44, 44);
+        [leftBt mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.mas_left).offset(15);
+            make.top.equalTo(self).offset(kNavTop+20);
+            make.height.equalTo(@44);
+            make.width.equalTo(@44);
+
+        }];
         [leftBt addTarget:self action:@selector(leftBtClick) forControlEvents:UIControlEventTouchUpInside];
         
         //添加两个按钮
         UIButton *rightBt = [[UIButton alloc]init];
         self.rightBt = rightBt;
         [self addSubview:rightBt];
-        rightBt.frame = CGRectMake(kScreenWidth-44-15, kNavTop+20, 44, 44);
-//        [leftBt mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.right.equalTo(self.mas_right).offset(-10);
-//            make.centerX.equalTo(self);
-//            make.height.equalTo(@44);
-//            make.width.equalTo(@44);
-//
-//        }];
+//        rightBt.frame = CGRectMake(kScreenWidth-44-15, kNavTop+20, 44, 44);
+        [rightBt mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.right.equalTo(self.mas_right).offset(-15);
+            make.top.equalTo(self).offset(kNavTop+20);
+            make.height.equalTo(@44);
+            make.width.equalTo(@44);
+
+        }];
         [rightBt addTarget:self action:@selector(rightBtClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
