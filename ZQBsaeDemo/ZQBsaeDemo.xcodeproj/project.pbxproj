@@ -45,6 +45,12 @@
 		02F57AF71F1C8E0C00818F4A /* ZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F57AF61F1C8E0C00818F4A /* ZWebViewController.m */; };
 		02FF337A1F5D41240006D553 /* ZCellGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FF33791F5D41240006D553 /* ZCellGroupController.m */; };
 		294BF9A635C107C878371B6A /* libPods-ZQBsaeDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A80DC0A98E79D4BC56B917E4 /* libPods-ZQBsaeDemo.a */; };
+		4552B1F21FBA952A00CCFD95 /* ZImageFlowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552B1F11FBA952A00CCFD95 /* ZImageFlowController.m */; };
+		4552B1F71FBA955700CCFD95 /* NewPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552B1F31FBA955700CCFD95 /* NewPagedFlowView.m */; };
+		4552B1F81FBA955700CCFD95 /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552B1F41FBA955700CCFD95 /* PGIndexBannerSubiew.m */; };
+		4552B1FC1FBD3C9000CCFD95 /* ZMyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552B1FB1FBD3C9000CCFD95 /* ZMyNavController.m */; };
+		4552B1FF1FBD43AF00CCFD95 /* ZMyNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552B1FE1FBD43AF00CCFD95 /* ZMyNavView.m */; };
+		455ACF6B1FC3C6C400C8D2C8 /* ZWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 455ACF6A1FC3C6C400C8D2C8 /* ZWebViewProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +125,18 @@
 		02FF33781F5D41240006D553 /* ZCellGroupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCellGroupController.h; sourceTree = "<group>"; };
 		02FF33791F5D41240006D553 /* ZCellGroupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCellGroupController.m; sourceTree = "<group>"; };
 		43E01DEA6B937A6AC7BEE802 /* Pods-ZQBsaeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQBsaeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZQBsaeDemo/Pods-ZQBsaeDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4552B1F01FBA952A00CCFD95 /* ZImageFlowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZImageFlowController.h; sourceTree = "<group>"; };
+		4552B1F11FBA952A00CCFD95 /* ZImageFlowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZImageFlowController.m; sourceTree = "<group>"; };
+		4552B1F31FBA955700CCFD95 /* NewPagedFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPagedFlowView.m; sourceTree = "<group>"; };
+		4552B1F41FBA955700CCFD95 /* PGIndexBannerSubiew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGIndexBannerSubiew.m; sourceTree = "<group>"; };
+		4552B1F51FBA955700CCFD95 /* NewPagedFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPagedFlowView.h; sourceTree = "<group>"; };
+		4552B1F61FBA955700CCFD95 /* PGIndexBannerSubiew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGIndexBannerSubiew.h; sourceTree = "<group>"; };
+		4552B1FA1FBD3C9000CCFD95 /* ZMyNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMyNavController.h; sourceTree = "<group>"; };
+		4552B1FB1FBD3C9000CCFD95 /* ZMyNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMyNavController.m; sourceTree = "<group>"; };
+		4552B1FD1FBD43AF00CCFD95 /* ZMyNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMyNavView.h; sourceTree = "<group>"; };
+		4552B1FE1FBD43AF00CCFD95 /* ZMyNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMyNavView.m; sourceTree = "<group>"; };
+		455ACF691FC3C6C400C8D2C8 /* ZWebViewProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWebViewProgressView.h; sourceTree = "<group>"; };
+		455ACF6A1FC3C6C400C8D2C8 /* ZWebViewProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWebViewProgressView.m; sourceTree = "<group>"; };
 		A80DC0A98E79D4BC56B917E4 /* libPods-ZQBsaeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZQBsaeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3D0FECC710DAEAA2447482 /* Pods-ZQBsaeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQBsaeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZQBsaeDemo/Pods-ZQBsaeDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,6 +259,8 @@
 				026676D91F0DDB4D00F5B847 /* AppDelegate.m */,
 				026676DB1F0DDB4D00F5B847 /* ViewController.h */,
 				026676DC1F0DDB4D00F5B847 /* ViewController.m */,
+				4552B1F91FBD3C3E00CCFD95 /* 个人中心自定义导航栏 */,
+				4552B1EF1FBA949000CCFD95 /* 卡片轮播 */,
 				4580FF051FAB06DE00DA5F90 /* 分组 */,
 				024429E81FA6D8C000ED048E /* 手势密码 */,
 				026F24DF1FA1D81500C52A45 /* 音频 */,
@@ -424,6 +444,8 @@
 			children = (
 				02F57AF51F1C8E0C00818F4A /* ZWebViewController.h */,
 				02F57AF61F1C8E0C00818F4A /* ZWebViewController.m */,
+				455ACF691FC3C6C400C8D2C8 /* ZWebViewProgressView.h */,
+				455ACF6A1FC3C6C400C8D2C8 /* ZWebViewProgressView.m */,
 			);
 			name = webViewUse;
 			sourceTree = "<group>";
@@ -435,6 +457,30 @@
 				43E01DEA6B937A6AC7BEE802 /* Pods-ZQBsaeDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4552B1EF1FBA949000CCFD95 /* 卡片轮播 */ = {
+			isa = PBXGroup;
+			children = (
+				4552B1F51FBA955700CCFD95 /* NewPagedFlowView.h */,
+				4552B1F31FBA955700CCFD95 /* NewPagedFlowView.m */,
+				4552B1F61FBA955700CCFD95 /* PGIndexBannerSubiew.h */,
+				4552B1F41FBA955700CCFD95 /* PGIndexBannerSubiew.m */,
+				4552B1F01FBA952A00CCFD95 /* ZImageFlowController.h */,
+				4552B1F11FBA952A00CCFD95 /* ZImageFlowController.m */,
+			);
+			name = "卡片轮播";
+			sourceTree = "<group>";
+		};
+		4552B1F91FBD3C3E00CCFD95 /* 个人中心自定义导航栏 */ = {
+			isa = PBXGroup;
+			children = (
+				4552B1FA1FBD3C9000CCFD95 /* ZMyNavController.h */,
+				4552B1FB1FBD3C9000CCFD95 /* ZMyNavController.m */,
+				4552B1FD1FBD43AF00CCFD95 /* ZMyNavView.h */,
+				4552B1FE1FBD43AF00CCFD95 /* ZMyNavView.m */,
+			);
+			name = "个人中心自定义导航栏";
 			sourceTree = "<group>";
 		};
 		4580FF051FAB06DE00DA5F90 /* 分组 */ = {
@@ -607,7 +653,9 @@
 				023C405C1F15C8B000E0EE60 /* ZScrollViewController.m in Sources */,
 				02963DF01F53C9A70014E7F0 /* ZBaseController.m in Sources */,
 				026676DD1F0DDB4D00F5B847 /* ViewController.m in Sources */,
+				455ACF6B1FC3C6C400C8D2C8 /* ZWebViewProgressView.m in Sources */,
 				02FF337A1F5D41240006D553 /* ZCellGroupController.m in Sources */,
+				4552B1F21FBA952A00CCFD95 /* ZImageFlowController.m in Sources */,
 				026676FA1F0E18CA00F5B847 /* UIImageView+setCornerRadius.m in Sources */,
 				023C405F1F15CA5F00E0EE60 /* ZCollectionViewController.m in Sources */,
 				026F24E21FA1D84E00C52A45 /* ZAVAudioViewController.m in Sources */,
@@ -616,18 +664,22 @@
 				0278BBE21F45955E00BE3C5B /* UIView_extra.m in Sources */,
 				024EC6EC1F0F32A800B61F4E /* ZTableViewUseController.m in Sources */,
 				02AC0EA61F94A73E00DDF659 /* ZAutoresViewController.m in Sources */,
+				4552B1FF1FBD43AF00CCFD95 /* ZMyNavView.m in Sources */,
 				026676E31F0DDB4D00F5B847 /* ZQBsaeDemo.xcdatamodeld in Sources */,
 				025151471F1F320700759727 /* ZReactNativeViewController.m in Sources */,
 				026F24DE1FA1C04D00C52A45 /* ZTool.m in Sources */,
 				026FAD661F5FA1B10009E7C8 /* ZContentModel.m in Sources */,
 				024429F11FA701AF00ED048E /* ZLockDownController.m in Sources */,
 				026FAD601F5F95CB0009E7C8 /* ZTabAddViewController.m in Sources */,
+				4552B1F71FBA955700CCFD95 /* NewPagedFlowView.m in Sources */,
 				025151411F1F0E5800759727 /* ZImageShowViewController.m in Sources */,
 				02AC0EA91F94ABDF00DDF659 /* ZautoresAddView.m in Sources */,
 				024429EB1FA6D8E500ED048E /* ZGestureController.m in Sources */,
 				024429EE1FA7019600ED048E /* ZSetGestureController.m in Sources */,
 				026676D71F0DDB4D00F5B847 /* main.m in Sources */,
 				02BAC44D1F32B23900EC5074 /* ZProvideViewController.m in Sources */,
+				4552B1F81FBA955700CCFD95 /* PGIndexBannerSubiew.m in Sources */,
+				4552B1FC1FBD3C9000CCFD95 /* ZMyNavController.m in Sources */,
 				0278BBE11F45955E00BE3C5B /* LeftSlideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

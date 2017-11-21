@@ -120,8 +120,7 @@
         _headerImg=[[UIImageView alloc]initWithFrame:CGRectMake(kScreenWidth/2-35, 50, 70, 70)];
         _headerImg.center=CGPointMake(kScreenWidth/2, 70);
         [_headerImg setImage:[UIImage imageNamed:@"headerImage"]];
-        [_headerImg.layer setMasksToBounds:YES];
-        [_headerImg.layer setCornerRadius:35];
+        [_headerImg setImageViewOval];
         _headerImg.backgroundColor=[UIColor whiteColor];
         _headerImg.userInteractionEnabled=YES;
         UITapGestureRecognizer *header_tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(header_tap_Click:)];
