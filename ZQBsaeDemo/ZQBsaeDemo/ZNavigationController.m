@@ -35,8 +35,7 @@
         [btn setTitle:@"返回" forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-//        [btn setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
-//        [btn setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
+
         
         [btn sizeToFit];
         // 让按钮内部的所有内容左对齐

@@ -8,32 +8,69 @@
 //
 
 #import "ZWebViewController.h"
+#import "ZWebViewProgressView.h"
 @interface ZWebViewController ()<UIWebViewDelegate>
 @property (nonatomic, strong) UIWebView *webView;
+@property (nonatomic, strong) ZWebViewProgressView *progressView;
+
 @end 
 
 @implementation ZWebViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    UIWebView *webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, kScreenHeight, kScreenWidth)];
+  
+    [self setupWebView];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self setupNavBackClick];
+}
+- (void)setupWebView{
+    UIWebView *webView = [[UIWebView alloc]initWithFrame:self.view.frame];
     self.webView = webView;
     webView.delegate = self;
     [self.view addSubview:webView];
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
-
+    
+    ZWebViewProgressView *progressView = [[ZWebViewProgressView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 3)];
+    self.progressView = progressView;
+    progressView.progressColor = [UIColor purpleColor];
+    [self.view addSubview:progressView];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://wxlc.crfchina.com/crf_finance/jsp/problem-list.html"]]];
 }
 /**webview加载完成 要在此方法里获取title*/
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     self.title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     NSLog(@"self.title%@",self.title);
-    
+    [self.progressView endLoadingAnimation];
+
 
 }
-- (void)viewWillDisappear:(BOOL)animated{
-    [self back];
+
+- (void)webViewDidStartLoad:(UIWebView *)webView{
+    [self.progressView startLoadingAnimation];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    [self.progressView endLoadingAnimation];
+}
+
+- (void)setupNavBackClick{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"返回" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
     
+    
+    [btn sizeToFit];
+    // 让按钮内部的所有内容左对齐
+    btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    
+    //设置内边距，让按钮靠近屏幕边缘
+    btn.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+
 }
 - (void)back
 {
@@ -42,7 +79,7 @@
         
     }else{
         [self.view resignFirstResponder];
-        [self.navigationController popViewControllerAnimated:YES];
+        [self.navigationController popViewControllerAnimated:NO];
     }
 
 }

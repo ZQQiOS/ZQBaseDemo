@@ -38,7 +38,6 @@
     
         //添加两个按钮
         UIButton *leftBt = [[UIButton alloc]init];
-        leftBt.backgroundColor = [UIColor orangeColor];
         self.leftBt = leftBt;
         [self addSubview:leftBt];
 //        leftBt.frame = CGRectMake(15, kNavTop+20, 44, 44);
