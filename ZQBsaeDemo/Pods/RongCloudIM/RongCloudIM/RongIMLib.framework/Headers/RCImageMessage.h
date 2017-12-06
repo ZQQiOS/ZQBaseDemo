@@ -33,6 +33,11 @@
 @property(nonatomic, strong) NSString *imageUrl;
 
 /*!
+ 图片的本地路径
+ */
+@property(nonatomic, strong) NSString *localPath;
+
+/*!
  图片消息的缩略图
  */
 @property(nonatomic, strong) UIImage *thumbnailImage;
@@ -55,6 +60,11 @@
 @property(nonatomic, strong) UIImage *originalImage;
 
 /*!
+ 图片消息的原始图片信息
+ */
+@property(nonatomic, strong, readonly) NSData *originalImageData;
+
+/*!
  初始化图片消息
 
  @param image   原始图片
@@ -69,5 +79,13 @@
  @return            图片消息对象
  */
 + (instancetype)messageWithImageURI:(NSString *)imageURI;
+
+/*!
+ 初始化图片消息
+
+ @param imageData    图片的原始数据
+ @return            图片消息对象
+ */
++ (instancetype)messageWithImageData:(NSData *)imageData;
 
 @end

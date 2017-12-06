@@ -50,7 +50,6 @@
 		4552B1F81FBA955700CCFD95 /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552B1F41FBA955700CCFD95 /* PGIndexBannerSubiew.m */; };
 		4552B1FC1FBD3C9000CCFD95 /* ZMyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552B1FB1FBD3C9000CCFD95 /* ZMyNavController.m */; };
 		4552B1FF1FBD43AF00CCFD95 /* ZMyNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552B1FE1FBD43AF00CCFD95 /* ZMyNavView.m */; };
-		455ACF6B1FC3C6C400C8D2C8 /* ZWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 455ACF6A1FC3C6C400C8D2C8 /* ZWebViewProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,8 +134,6 @@
 		4552B1FB1FBD3C9000CCFD95 /* ZMyNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMyNavController.m; sourceTree = "<group>"; };
 		4552B1FD1FBD43AF00CCFD95 /* ZMyNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMyNavView.h; sourceTree = "<group>"; };
 		4552B1FE1FBD43AF00CCFD95 /* ZMyNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMyNavView.m; sourceTree = "<group>"; };
-		455ACF691FC3C6C400C8D2C8 /* ZWebViewProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWebViewProgressView.h; sourceTree = "<group>"; };
-		455ACF6A1FC3C6C400C8D2C8 /* ZWebViewProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWebViewProgressView.m; sourceTree = "<group>"; };
 		A80DC0A98E79D4BC56B917E4 /* libPods-ZQBsaeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZQBsaeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3D0FECC710DAEAA2447482 /* Pods-ZQBsaeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQBsaeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZQBsaeDemo/Pods-ZQBsaeDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -444,8 +441,6 @@
 			children = (
 				02F57AF51F1C8E0C00818F4A /* ZWebViewController.h */,
 				02F57AF61F1C8E0C00818F4A /* ZWebViewController.m */,
-				455ACF691FC3C6C400C8D2C8 /* ZWebViewProgressView.h */,
-				455ACF6A1FC3C6C400C8D2C8 /* ZWebViewProgressView.m */,
 			);
 			name = webViewUse;
 			sourceTree = "<group>";
@@ -653,7 +648,6 @@
 				023C405C1F15C8B000E0EE60 /* ZScrollViewController.m in Sources */,
 				02963DF01F53C9A70014E7F0 /* ZBaseController.m in Sources */,
 				026676DD1F0DDB4D00F5B847 /* ViewController.m in Sources */,
-				455ACF6B1FC3C6C400C8D2C8 /* ZWebViewProgressView.m in Sources */,
 				02FF337A1F5D41240006D553 /* ZCellGroupController.m in Sources */,
 				4552B1F21FBA952A00CCFD95 /* ZImageFlowController.m in Sources */,
 				026676FA1F0E18CA00F5B847 /* UIImageView+setCornerRadius.m in Sources */,
@@ -728,6 +722,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: qingqing Zhang (7H8L2HQF2Q)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 庆庆 张 (US3N4YXEZA)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -749,7 +744,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -779,7 +774,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: qingqing Zhang (7H8L2HQF2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: qingqing Zhang (7H8L2HQF2Q)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -794,7 +790,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;

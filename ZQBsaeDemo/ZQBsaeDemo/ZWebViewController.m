@@ -8,10 +8,9 @@
 //
 
 #import "ZWebViewController.h"
-#import "ZWebViewProgressView.h"
 @interface ZWebViewController ()<UIWebViewDelegate>
 @property (nonatomic, strong) UIWebView *webView;
-@property (nonatomic, strong) ZWebViewProgressView *progressView;
+@property (nonatomic, strong) ZQProgressView *progressView;
 
 @end 
 
@@ -31,7 +30,7 @@
     webView.delegate = self;
     [self.view addSubview:webView];
     
-    ZWebViewProgressView *progressView = [[ZWebViewProgressView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 3)];
+    ZQProgressView *progressView = [[ZQProgressView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 3)];
     self.progressView = progressView;
     progressView.progressColor = [UIColor purpleColor];
     [self.view addSubview:progressView];
