@@ -5,9 +5,10 @@
 //
 //  Created by crfchina-mac-mini-1000 on 2017/7/17.
 //  Copyright © 2017年 SH. All rights reserved.
-//
+//WebViewJavascriptBridge使用
 
 #import "ZWebViewController.h"
+#import "WebViewJavascriptBridge.h"
 @interface ZWebViewController ()<UIWebViewDelegate>
 @property (nonatomic, strong) UIWebView *webView;
 @property (nonatomic, strong) ZQProgressView *progressView;
@@ -29,19 +30,32 @@
     self.webView = webView;
     webView.delegate = self;
     [self.view addSubview:webView];
+    //第一步：开启日志
+    [WebViewJavascriptBridge enableLogging];
+    //第二步：给ObjC与JS建立桥梁
+    WebViewJavascriptBridge *bridge = [WebViewJavascriptBridge bridgeForWebView:webView];
+    //设置代理
+    [bridge setWebViewDelegate:self];
+    //第三步：注册HandleName，用于给JS端调用iOS端
     
     ZQProgressView *progressView = [[ZQProgressView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 3)];
     self.progressView = progressView;
     progressView.progressColor = [UIColor purpleColor];
     [self.view addSubview:progressView];
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://wxlc.crfchina.com/crf_finance/jsp/problem-list.html"]]];
+//    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://wxlc.crfchina.com/crf_finance/jsp/problem-list.html"]]];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url] ;
+    [webView loadRequest:request];
 }
 /**webview加载完成 要在此方法里获取title*/
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     self.title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     NSLog(@"self.title%@",self.title);
     [self.progressView endLoadingAnimation];
-
+    //原生界面调用h5的方法OCAlert
+    [self.webView stringByEvaluatingJavaScriptFromString:@"OCAlert()"];
+    
 
 }
 

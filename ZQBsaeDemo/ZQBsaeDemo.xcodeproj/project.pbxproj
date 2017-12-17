@@ -50,6 +50,13 @@
 		4552B1F81FBA955700CCFD95 /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552B1F41FBA955700CCFD95 /* PGIndexBannerSubiew.m */; };
 		4552B1FC1FBD3C9000CCFD95 /* ZMyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552B1FB1FBD3C9000CCFD95 /* ZMyNavController.m */; };
 		4552B1FF1FBD43AF00CCFD95 /* ZMyNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552B1FE1FBD43AF00CCFD95 /* ZMyNavView.m */; };
+		455F78BD1FDA32AE006CB1D3 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 455F78BC1FDA32AE006CB1D3 /* test.html */; };
+		4594F9AE1FE654CE00BA989D /* ZPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594F9AD1FE654CE00BA989D /* ZPickView.m */; };
+		45A2B2171FE4F7A50083E2E3 /* CityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45A2B2161FE4F7A50083E2E3 /* CityList.plist */; };
+		45A2B21B1FE4F8AA0083E2E3 /* ZPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2B21A1FE4F8AA0083E2E3 /* ZPickerViewController.m */; };
+		45A2B2221FE4FB920083E2E3 /* SHCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2B21D1FE4FB910083E2E3 /* SHCityModel.m */; };
+		45A2B2231FE4FB920083E2E3 /* SHCountyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2B21F1FE4FB910083E2E3 /* SHCountyModel.m */; };
+		45A2B2241FE4FB920083E2E3 /* SHProvNmModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2B2201FE4FB920083E2E3 /* SHProvNmModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +141,18 @@
 		4552B1FB1FBD3C9000CCFD95 /* ZMyNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMyNavController.m; sourceTree = "<group>"; };
 		4552B1FD1FBD43AF00CCFD95 /* ZMyNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMyNavView.h; sourceTree = "<group>"; };
 		4552B1FE1FBD43AF00CCFD95 /* ZMyNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMyNavView.m; sourceTree = "<group>"; };
+		455F78BC1FDA32AE006CB1D3 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		4594F9AC1FE654CE00BA989D /* ZPickView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPickView.h; sourceTree = "<group>"; };
+		4594F9AD1FE654CE00BA989D /* ZPickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPickView.m; sourceTree = "<group>"; };
+		45A2B2161FE4F7A50083E2E3 /* CityList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityList.plist; sourceTree = "<group>"; };
+		45A2B2191FE4F8AA0083E2E3 /* ZPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPickerViewController.h; sourceTree = "<group>"; };
+		45A2B21A1FE4F8AA0083E2E3 /* ZPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPickerViewController.m; sourceTree = "<group>"; };
+		45A2B21C1FE4FB900083E2E3 /* SHCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCityModel.h; sourceTree = "<group>"; };
+		45A2B21D1FE4FB910083E2E3 /* SHCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCityModel.m; sourceTree = "<group>"; };
+		45A2B21E1FE4FB910083E2E3 /* SHProvNmModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHProvNmModel.h; sourceTree = "<group>"; };
+		45A2B21F1FE4FB910083E2E3 /* SHCountyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCountyModel.m; sourceTree = "<group>"; };
+		45A2B2201FE4FB920083E2E3 /* SHProvNmModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHProvNmModel.m; sourceTree = "<group>"; };
+		45A2B2211FE4FB920083E2E3 /* SHCountyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCountyModel.h; sourceTree = "<group>"; };
 		A80DC0A98E79D4BC56B917E4 /* libPods-ZQBsaeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZQBsaeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3D0FECC710DAEAA2447482 /* Pods-ZQBsaeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQBsaeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZQBsaeDemo/Pods-ZQBsaeDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -254,8 +273,10 @@
 				026676F11F0E182100F5B847 /* ZTool */,
 				026676D81F0DDB4D00F5B847 /* AppDelegate.h */,
 				026676D91F0DDB4D00F5B847 /* AppDelegate.m */,
+				026676F01F0E143500F5B847 /* ZQBsaeDemo.pch */,
 				026676DB1F0DDB4D00F5B847 /* ViewController.h */,
 				026676DC1F0DDB4D00F5B847 /* ViewController.m */,
+				45A2B2151FE4F59A0083E2E3 /* 省市区三联动 */,
 				4552B1F91FBD3C3E00CCFD95 /* 个人中心自定义导航栏 */,
 				4552B1EF1FBA949000CCFD95 /* 卡片轮播 */,
 				4580FF051FAB06DE00DA5F90 /* 分组 */,
@@ -286,7 +307,6 @@
 				026676E61F0DDB4D00F5B847 /* LaunchScreen.storyboard */,
 				026676E91F0DDB4D00F5B847 /* Info.plist */,
 				026676E11F0DDB4D00F5B847 /* ZQBsaeDemo.xcdatamodeld */,
-				026676F01F0E143500F5B847 /* ZQBsaeDemo.pch */,
 				026676D61F0DDB4D00F5B847 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -439,6 +459,7 @@
 		02F57AF41F1C8DEA00818F4A /* webViewUse */ = {
 			isa = PBXGroup;
 			children = (
+				455F78BC1FDA32AE006CB1D3 /* test.html */,
 				02F57AF51F1C8E0C00818F4A /* ZWebViewController.h */,
 				02F57AF61F1C8E0C00818F4A /* ZWebViewController.m */,
 			);
@@ -485,6 +506,24 @@
 				02FF33791F5D41240006D553 /* ZCellGroupController.m */,
 			);
 			name = "分组";
+			sourceTree = "<group>";
+		};
+		45A2B2151FE4F59A0083E2E3 /* 省市区三联动 */ = {
+			isa = PBXGroup;
+			children = (
+				45A2B21C1FE4FB900083E2E3 /* SHCityModel.h */,
+				45A2B21D1FE4FB910083E2E3 /* SHCityModel.m */,
+				45A2B2211FE4FB920083E2E3 /* SHCountyModel.h */,
+				45A2B21F1FE4FB910083E2E3 /* SHCountyModel.m */,
+				45A2B21E1FE4FB910083E2E3 /* SHProvNmModel.h */,
+				45A2B2201FE4FB920083E2E3 /* SHProvNmModel.m */,
+				45A2B2161FE4F7A50083E2E3 /* CityList.plist */,
+				45A2B2191FE4F8AA0083E2E3 /* ZPickerViewController.h */,
+				45A2B21A1FE4F8AA0083E2E3 /* ZPickerViewController.m */,
+				4594F9AC1FE654CE00BA989D /* ZPickView.h */,
+				4594F9AD1FE654CE00BA989D /* ZPickView.m */,
+			);
+			name = "省市区三联动";
 			sourceTree = "<group>";
 		};
 		C5175D795CECD1BC7E125238 /* Frameworks */ = {
@@ -565,10 +604,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455F78BD1FDA32AE006CB1D3 /* test.html in Resources */,
 				026676E81F0DDB4D00F5B847 /* LaunchScreen.storyboard in Resources */,
 				025151441F1F0E9100759727 /* testgif.gif in Resources */,
 				02F2B4D01F341FBC00E14FB0 /* show.gif in Resources */,
 				026676E51F0DDB4D00F5B847 /* Assets.xcassets in Resources */,
+				45A2B2171FE4F7A50083E2E3 /* CityList.plist in Resources */,
 				026F24E51FA1E09200C52A45 /* testMusic.mp3 in Resources */,
 				026676E01F0DDB4D00F5B847 /* Main.storyboard in Resources */,
 			);
@@ -644,14 +685,18 @@
 				026FAD631F5FA1550009E7C8 /* ZContentCell.m in Sources */,
 				029F266B1F6F786B00B078C5 /* ZQMD5.m in Sources */,
 				02F57AF71F1C8E0C00818F4A /* ZWebViewController.m in Sources */,
+				4594F9AE1FE654CE00BA989D /* ZPickView.m in Sources */,
 				0278BBDB1F458C4C00BE3C5B /* ZLeftSlideController.m in Sources */,
 				023C405C1F15C8B000E0EE60 /* ZScrollViewController.m in Sources */,
 				02963DF01F53C9A70014E7F0 /* ZBaseController.m in Sources */,
+				45A2B2241FE4FB920083E2E3 /* SHProvNmModel.m in Sources */,
+				45A2B21B1FE4F8AA0083E2E3 /* ZPickerViewController.m in Sources */,
 				026676DD1F0DDB4D00F5B847 /* ViewController.m in Sources */,
 				02FF337A1F5D41240006D553 /* ZCellGroupController.m in Sources */,
 				4552B1F21FBA952A00CCFD95 /* ZImageFlowController.m in Sources */,
 				026676FA1F0E18CA00F5B847 /* UIImageView+setCornerRadius.m in Sources */,
 				023C405F1F15CA5F00E0EE60 /* ZCollectionViewController.m in Sources */,
+				45A2B2231FE4FB920083E2E3 /* SHCountyModel.m in Sources */,
 				026F24E21FA1D84E00C52A45 /* ZAVAudioViewController.m in Sources */,
 				026676DA1F0DDB4D00F5B847 /* AppDelegate.m in Sources */,
 				024429F41FA7093900ED048E /* ZGestureLockView.m in Sources */,
@@ -675,6 +720,7 @@
 				4552B1F81FBA955700CCFD95 /* PGIndexBannerSubiew.m in Sources */,
 				4552B1FC1FBD3C9000CCFD95 /* ZMyNavController.m in Sources */,
 				0278BBE11F45955E00BE3C5B /* LeftSlideViewController.m in Sources */,
+				45A2B2221FE4FB920083E2E3 /* SHCityModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

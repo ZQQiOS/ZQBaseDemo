@@ -76,14 +76,14 @@
     for (mDic in array) {
         //获取的字典
         ZContentModel *model = [[ZContentModel alloc]init];
-        model = [ZContentModel mj_objectWithKeyValues:mDic];
+        model = [ZContentModel modelWithJSON:mDic];
         [mArray addObject:model];
     }
 
     self.arrayData = mArray.copy;
 }
 - (void)setupTableView{
-    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
+    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight- kViewTop) style:UITableViewStyleGrouped];
     self.tableView = tableView;
     [self.view addSubview:tableView];
     

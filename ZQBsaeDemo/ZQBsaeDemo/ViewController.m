@@ -24,6 +24,7 @@
 #import "ZGestureController.h"
 #import "ZImageFlowController.h"
 #import "ZMyNavController.h"
+#import "ZPickerViewController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *arrayData;
@@ -40,7 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
-    self.arrayData = @[@"基本组件(各种加密)",@"tableView-Use",@"scrollView-Use",@"collectionView-Use",@"react-native-Use",@"webView-Use",@"image-Show",@"provide-Show",@"抽屉效果",@"cell展开收回",@"tableViewAddView",@"自动布局",@"音频",@"手势密码",@"图片轮播",@"个人中心自定义导航栏"];
+    self.arrayData = @[@"基本组件(各种加密)",@"tableView-Use",@"scrollView-Use",@"collectionView-Use",@"react-native-Use",@"webView-Use",@"image-Show",@"provide-Show",@"抽屉效果",@"cell展开收回",@"tableViewAddView",@"自动布局",@"音频",@"手势密码",@"图片轮播",@"个人中心自定义导航栏",@"省市级三联动"];
     [self setupTableView];
     
 }
@@ -200,6 +201,14 @@
             ZMyNavController *myNavVc = [[ZMyNavController alloc]init];
             
             [self pushView:myNavVc didSelectRowAtIndexPath:indexPath];
+            
+        }
+            break;
+        case 16:
+        {
+            ZPickerViewController *pickVc = [[ZPickerViewController alloc]init];
+            
+            [self pushView:pickVc didSelectRowAtIndexPath:indexPath];
             
         }
             break;
