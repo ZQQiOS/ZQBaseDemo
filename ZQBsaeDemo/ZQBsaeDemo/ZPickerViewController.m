@@ -13,9 +13,7 @@
 #import "ZPickView.h"
 @interface ZPickerViewController ()
 @property (nonatomic, strong) ZPickView *pickView;
-@property (nonatomic, assign) NSInteger index1;
-@property (nonatomic, assign) NSInteger index2;
-@property (nonatomic, assign) NSInteger index3;
+
 
 @end
 

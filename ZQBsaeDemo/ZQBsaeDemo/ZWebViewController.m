@@ -27,6 +27,8 @@
 }
 - (void)setupWebView{
     UIWebView *webView = [[UIWebView alloc]initWithFrame:self.view.frame];
+    webView.height = kScreenHeight- kViewTop;
+    webView.backgroundColor = [UIColor whiteColor];
     self.webView = webView;
     webView.delegate = self;
     [self.view addSubview:webView];
@@ -42,11 +44,11 @@
     self.progressView = progressView;
     progressView.progressColor = [UIColor purpleColor];
     [self.view addSubview:progressView];
-//    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://wxlc.crfchina.com/crf_finance/jsp/problem-list.html"]]];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"];
-    NSURL *url = [NSURL fileURLWithPath:path];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url] ;
-    [webView loadRequest:request];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://wxlc.crfchina.com/crf_finance/jsp/problem-list.html"]]];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"];
+//    NSURL *url = [NSURL fileURLWithPath:path];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url] ;
+//    [webView loadRequest:request];
 }
 /**webview加载完成 要在此方法里获取title*/
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
