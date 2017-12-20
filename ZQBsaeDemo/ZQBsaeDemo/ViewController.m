@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 #import "ZTableViewUseController.h"
-#import "ZScrollViewController.h"
+#import "ZImageViewController.h"
 #import "ZCollectionViewController.h"
 #import "ZWebViewController.h"
 #import "ZImageShowViewController.h"
@@ -41,7 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
-    self.arrayData = @[@"基本组件(各种加密)",@"tableView-Use",@"scrollView-Use",@"collectionView-Use",@"react-native-Use",@"webView-Use",@"image-Show",@"provide-Show",@"抽屉效果",@"cell展开收回",@"tableViewAddView",@"自动布局",@"音频",@"手势密码",@"图片轮播",@"个人中心自定义导航栏",@"省市级三联动"];
+    self.arrayData = @[@"基本组件(各种加密)",@"tableView-Use",@"图片大图查看",@"collectionView-Use",@"react-native-Use",@"webView-Use",@"image-Show",@"provide-Show",@"抽屉效果",@"cell展开收回",@"tableViewAddView",@"自动布局",@"音频",@"手势密码",@"图片轮播",@"个人中心自定义导航栏",@"省市级三联动"];
     [self setupTableView];
     
 }
@@ -98,8 +98,8 @@
             break;
             case 2:
         {
-            ZScrollViewController *scrollVc = [[ZScrollViewController alloc]init];
-            [self pushView:scrollVc didSelectRowAtIndexPath:indexPath];
+            ZImageViewController *imageVc = [[ZImageViewController alloc]init];
+            [self pushView:imageVc didSelectRowAtIndexPath:indexPath];
 
 
         }

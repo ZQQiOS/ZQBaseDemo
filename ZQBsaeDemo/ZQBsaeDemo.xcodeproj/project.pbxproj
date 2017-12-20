@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		023C405C1F15C8B000E0EE60 /* ZScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023C405B1F15C8B000E0EE60 /* ZScrollViewController.m */; };
 		023C405F1F15CA5F00E0EE60 /* ZCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023C405E1F15CA5F00E0EE60 /* ZCollectionViewController.m */; };
 		024429EB1FA6D8E500ED048E /* ZGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 024429EA1FA6D8E500ED048E /* ZGestureController.m */; };
 		024429EE1FA7019600ED048E /* ZSetGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 024429ED1FA7019600ED048E /* ZSetGestureController.m */; };
@@ -52,6 +51,10 @@
 		4552B1FF1FBD43AF00CCFD95 /* ZMyNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552B1FE1FBD43AF00CCFD95 /* ZMyNavView.m */; };
 		455F78BD1FDA32AE006CB1D3 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 455F78BC1FDA32AE006CB1D3 /* test.html */; };
 		4594F9AE1FE654CE00BA989D /* ZPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594F9AD1FE654CE00BA989D /* ZPickView.m */; };
+		4594F9C81FE8F56000BA989D /* ZImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594F9C61FE8F56000BA989D /* ZImageViewController.m */; };
+		4594F9C91FE8F56000BA989D /* ZImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4594F9C71FE8F56000BA989D /* ZImageViewController.xib */; };
+		4594F9CF1FE8F83700BA989D /* ZPushImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594F9CE1FE8F83700BA989D /* ZPushImageViewController.m */; };
+		4594F9D21FE8FF5200BA989D /* SelectPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594F9D11FE8FF5100BA989D /* SelectPhotoManager.m */; };
 		45A2B2171FE4F7A50083E2E3 /* CityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45A2B2161FE4F7A50083E2E3 /* CityList.plist */; };
 		45A2B21B1FE4F8AA0083E2E3 /* ZPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2B21A1FE4F8AA0083E2E3 /* ZPickerViewController.m */; };
 		45A2B2221FE4FB920083E2E3 /* SHCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2B21D1FE4FB910083E2E3 /* SHCityModel.m */; };
@@ -61,8 +64,6 @@
 
 /* Begin PBXFileReference section */
 		0224B6701F1E1BD900CAE51F /* ZQBsaeDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZQBsaeDemo.entitlements; sourceTree = "<group>"; };
-		023C405A1F15C8B000E0EE60 /* ZScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZScrollViewController.h; sourceTree = "<group>"; };
-		023C405B1F15C8B000E0EE60 /* ZScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZScrollViewController.m; sourceTree = "<group>"; };
 		023C405D1F15CA5F00E0EE60 /* ZCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCollectionViewController.h; sourceTree = "<group>"; };
 		023C405E1F15CA5F00E0EE60 /* ZCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCollectionViewController.m; sourceTree = "<group>"; };
 		024429E91FA6D8E500ED048E /* ZGestureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGestureController.h; sourceTree = "<group>"; };
@@ -144,6 +145,13 @@
 		455F78BC1FDA32AE006CB1D3 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		4594F9AC1FE654CE00BA989D /* ZPickView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPickView.h; sourceTree = "<group>"; };
 		4594F9AD1FE654CE00BA989D /* ZPickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPickView.m; sourceTree = "<group>"; };
+		4594F9C51FE8F56000BA989D /* ZImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZImageViewController.h; sourceTree = "<group>"; };
+		4594F9C61FE8F56000BA989D /* ZImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZImageViewController.m; sourceTree = "<group>"; };
+		4594F9C71FE8F56000BA989D /* ZImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZImageViewController.xib; sourceTree = "<group>"; };
+		4594F9CD1FE8F83700BA989D /* ZPushImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPushImageViewController.h; sourceTree = "<group>"; };
+		4594F9CE1FE8F83700BA989D /* ZPushImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPushImageViewController.m; sourceTree = "<group>"; };
+		4594F9D01FE8FF5100BA989D /* SelectPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoManager.h; sourceTree = "<group>"; };
+		4594F9D11FE8FF5100BA989D /* SelectPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoManager.m; sourceTree = "<group>"; };
 		45A2B2161FE4F7A50083E2E3 /* CityList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityList.plist; sourceTree = "<group>"; };
 		45A2B2191FE4F8AA0083E2E3 /* ZPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPickerViewController.h; sourceTree = "<group>"; };
 		45A2B21A1FE4F8AA0083E2E3 /* ZPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPickerViewController.m; sourceTree = "<group>"; };
@@ -290,7 +298,7 @@
 				0251513E1F1F0E1C00759727 /* imageShow */,
 				02F57AF41F1C8DEA00818F4A /* webViewUse */,
 				02F57AF31F1C8DD200818F4A /* collectionViewUse */,
-				02F57AF21F1C8DBC00818F4A /* scrollViewUse */,
+				02F57AF21F1C8DBC00818F4A /* 图片放大缩小 */,
 				024EC6E91F0F2F0C00B61F4E /* TableViewUse */,
 				02BAC4471F32B1BE00EC5074 /* provideUse */,
 				025151421F1F0E6700759727 /* resources */,
@@ -438,13 +446,18 @@
 			name = provideUse;
 			sourceTree = "<group>";
 		};
-		02F57AF21F1C8DBC00818F4A /* scrollViewUse */ = {
+		02F57AF21F1C8DBC00818F4A /* 图片放大缩小 */ = {
 			isa = PBXGroup;
 			children = (
-				023C405A1F15C8B000E0EE60 /* ZScrollViewController.h */,
-				023C405B1F15C8B000E0EE60 /* ZScrollViewController.m */,
+				4594F9C51FE8F56000BA989D /* ZImageViewController.h */,
+				4594F9C61FE8F56000BA989D /* ZImageViewController.m */,
+				4594F9CD1FE8F83700BA989D /* ZPushImageViewController.h */,
+				4594F9CE1FE8F83700BA989D /* ZPushImageViewController.m */,
+				4594F9D01FE8FF5100BA989D /* SelectPhotoManager.h */,
+				4594F9D11FE8FF5100BA989D /* SelectPhotoManager.m */,
+				4594F9C71FE8F56000BA989D /* ZImageViewController.xib */,
 			);
-			name = scrollViewUse;
+			name = "图片放大缩小";
 			sourceTree = "<group>";
 		};
 		02F57AF31F1C8DD200818F4A /* collectionViewUse */ = {
@@ -606,6 +619,7 @@
 			files = (
 				455F78BD1FDA32AE006CB1D3 /* test.html in Resources */,
 				026676E81F0DDB4D00F5B847 /* LaunchScreen.storyboard in Resources */,
+				4594F9C91FE8F56000BA989D /* ZImageViewController.xib in Resources */,
 				025151441F1F0E9100759727 /* testgif.gif in Resources */,
 				02F2B4D01F341FBC00E14FB0 /* show.gif in Resources */,
 				026676E51F0DDB4D00F5B847 /* Assets.xcassets in Resources */,
@@ -687,8 +701,8 @@
 				02F57AF71F1C8E0C00818F4A /* ZWebViewController.m in Sources */,
 				4594F9AE1FE654CE00BA989D /* ZPickView.m in Sources */,
 				0278BBDB1F458C4C00BE3C5B /* ZLeftSlideController.m in Sources */,
-				023C405C1F15C8B000E0EE60 /* ZScrollViewController.m in Sources */,
 				02963DF01F53C9A70014E7F0 /* ZBaseController.m in Sources */,
+				4594F9C81FE8F56000BA989D /* ZImageViewController.m in Sources */,
 				45A2B2241FE4FB920083E2E3 /* SHProvNmModel.m in Sources */,
 				45A2B21B1FE4F8AA0083E2E3 /* ZPickerViewController.m in Sources */,
 				026676DD1F0DDB4D00F5B847 /* ViewController.m in Sources */,
@@ -704,6 +718,7 @@
 				024EC6EC1F0F32A800B61F4E /* ZTableViewUseController.m in Sources */,
 				02AC0EA61F94A73E00DDF659 /* ZAutoresViewController.m in Sources */,
 				4552B1FF1FBD43AF00CCFD95 /* ZMyNavView.m in Sources */,
+				4594F9CF1FE8F83700BA989D /* ZPushImageViewController.m in Sources */,
 				026676E31F0DDB4D00F5B847 /* ZQBsaeDemo.xcdatamodeld in Sources */,
 				025151471F1F320700759727 /* ZReactNativeViewController.m in Sources */,
 				026F24DE1FA1C04D00C52A45 /* ZTool.m in Sources */,
@@ -714,6 +729,7 @@
 				025151411F1F0E5800759727 /* ZImageShowViewController.m in Sources */,
 				02AC0EA91F94ABDF00DDF659 /* ZautoresAddView.m in Sources */,
 				024429EB1FA6D8E500ED048E /* ZGestureController.m in Sources */,
+				4594F9D21FE8FF5200BA989D /* SelectPhotoManager.m in Sources */,
 				024429EE1FA7019600ED048E /* ZSetGestureController.m in Sources */,
 				026676D71F0DDB4D00F5B847 /* main.m in Sources */,
 				02BAC44D1F32B23900EC5074 /* ZProvideViewController.m in Sources */,
